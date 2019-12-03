@@ -4,12 +4,12 @@ body{
   font-weight: 400;
   line-height: 1.5;
   background-color: #1e1e2f;
+  color: #fff;
 }
-.card {
+.card, #card, #fotos {
 background: #27293d;
 border: 0;
 position: relative;
-width: 60%;
 margin: 60px 30px;
 box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
 display: flex;
@@ -20,8 +20,23 @@ flex: 1 1 auto;
 border-radius: .2857rem;
 color: #fff;
 font-weight: 100;
+padding: 1rem;
 }
 
+#card {
+  background: linear-gradient(0deg,#3358f4,#1d8cf8);
+  text-align: center;
+  flex-direction: row;
+
+}
+
+#fotos {
+  text-align: center;
+}
+
+#fotos img {
+  align-self: center;
+}
 
 
 .card-header {
@@ -31,7 +46,6 @@ padding: 15px 15px 0;
 .table-responsive {
 overflow: scroll;
 display: block;
-padding: 1rem;
 }
 
 .table {
@@ -71,31 +85,20 @@ color: hsla(0,0%,100%,.7);
 
 th {
 text-transform: uppercase;
-color: #3358f4;
-font-size: 12px;
+color:#0cceefe6;
+font-size: 14px;
 font-weight: 700;
 }
 
 
-.sidebar {
-background: linear-gradient(0deg,#3358f4,#1d8cf8);
-position: fixed;
-display: block;
-top: 0;
-height: 100%;
-width: 260px;
-right: auto;
-left: 0;
-margin: 0;
-border-radius: 0;
-z-index: 1032;
-visibility: visible;
-overflow-y: visible;
-padding: 0;
+#logo {
+  width: 48px !important;
+  height: 48px !important;
 }
 
-.App-logo {
-height: 40vmin;
+#barca {
+  width: 50% !important;
+  height: 50% !important;
 }
 
 .App-header {
@@ -120,10 +123,6 @@ background: #27293d;
 box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
 }
 
-.leftli {
-float:right;
-}
-
 li {
 float: left;
 }
@@ -138,7 +137,8 @@ padding: 20px 25px;
 text-decoration: none;
 }
 li img {
-padding: 4px 16px;
+padding: 8px;
+
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -150,3 +150,49 @@ background: linear-gradient(0deg,#3358f4,#1d8cf8);
 background: #1e1e2f;
 }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
