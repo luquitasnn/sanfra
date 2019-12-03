@@ -48,7 +48,7 @@ render() {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Tabla de posicines</CardTitle>
+                  <CardTitle tag="h4">Tabla de posiciones</CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table className="tablesorter" responsive>
