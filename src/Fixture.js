@@ -56,9 +56,9 @@ import {
                           <th>Hora</th>
                           <th>Cancha</th>
                           <th>Local</th>
-                          <th>Goles</th>
                           <th> </th>
-                          <th>Goles</th>
+                          <th> </th>
+                          <th> </th>
                           <th>Visitante</th>
                         </tr>
                       </thead>
@@ -69,9 +69,9 @@ import {
                           <td>{obj.Hora}</td>
                           <td>{obj.Cancha}</td>
                           <td>{obj.Local}</td>
-                          <td>{obj.Goles}</td>
-                          <td>Vs </td>
-                          <td>{obj.Goles}</td>
+                          <td>{obj.Golesl}</td>
+                          <td> - </td>
+                          <td>{obj.Golesv}</td>
                           <td>{obj.Visitante}</td>
                         </tr>
                        ))} 

@@ -51,7 +51,7 @@ render() {
                   <Table className="tablesorter" responsive>
                     <thead className="text-primary">
                       <tr>
-                        <th>Posicion</th>
+                        <th>Pos</th>
                         <th>Equipo</th>
                         <th>PJ</th>
                         <th>PG</th>
@@ -60,14 +60,14 @@ render() {
                         <th>GF</th>
                         <th>GC</th>
                         <th>DG</th>
-                        <th>Puntos</th>
+                        <th>Ptos</th>
                       </tr>
                     </thead>
                     <tbody>
                     { data.map(obj => (
                       <tr>
                         <td>{obj.POSICION}</td>
-                        <td>{obj.EQUIPO}</td>
+                        <td><b>{obj.EQUIPO}</b></td>
                         <td>{obj.PJ}</td>
                         <td>{obj.PG}</td>
                         <td>{obj.PE}</td>
@@ -75,7 +75,7 @@ render() {
                         <td>{obj.GF}</td>
                         <td>{obj.GC}</td>
                         <td>{obj.DG}</td>
-                        <td>{obj.Puntos}</td>
+                        <td><b>{obj.Puntos}</b></td>
                       </tr>
                      ))} 
                     </tbody>
